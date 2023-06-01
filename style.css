@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: sans-serif;
+    scroll-behavior: smooth;
+}
+img{
+    width: 100%;
+}
+a{
+    color: inherit !important ;
+    text-decoration: none;
+    cursor: pointer;
+}
+header{
+    justify-content: space-between;
+    height: 100vh;
+    background-image: url(https://scubadivinglovers.com/wp-content/uploads/2018/05/Similan-Islands-diving.jpg);
+   background-size: 100%;
+}
+header nav {
+    display: flex;
+    justify-content: space-between; 
+    padding: 10px 50px;
+    align-items: center; 
+    background-color: skyblue;
+    position: fixed;
+    width: 95vw;
+}
+header nav .logo {
+    width: 50px;
+}
+header nav ul {
+   display: flex;
+   gap: 30px ;
+   list-style: none;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: blue;
+}
+header .showcase {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+
+}
+header .showcase .text {
+    width: 50%;
+    text-align: center;
+    background-color: blueviolet;
+    padding: 20px;
+    border-radius: 20px;
+     
+}
+.elements{
+    display: flex; 
+    flex-direction: column;
+    gap: 50px;
+    padding: 30px 50px;
+    background: aquamarine;
+}
+.elements .title{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.elements .title h1{
+    font-size: 60px;
+}
+.elements .cards{
+    display: flex;
+    gap: 3.3%;
+ 
+}
+.elements .cards .card{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: cyan;
+    padding: 20px;
+    box-shadow: 0px 0px 40px -5px black;
+}
+.elements .cards .card:hover{
+    box-shadow: 0px 0px 10px -5px black;
+   background: rgb(195, 195, 195);s
+   transition: 1s;
+}
+.elements .cards .card .text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.elements .cards .card .text button{
+    padding: 15px 20px;
+    text-align: center;
+    background: blue;
+    color: black;
+    font-weight: 600;
+    letter-spacing: 5px;
+    font-size: 20px;
+    border: 1px solid blue;
+    color: white;
+}
+.elements .cards .card .text button:hover{
+    color: blue;
+    background: white;
+    transition: 1s;
+    
+}
+.cards .text{
+    color: darkslategrey;
+}
+footer{
+    background: turquoise;
+    padding: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;   
+}
+footer .logo{
+    width: 120px;
+}
+footer .contuct {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: black;
+    
+}
+footer .mail{
+   display: flex;
+   gap: 10px;
+}
+footer .mail input{
+    transition: 3s;
+    padding 10px 15px;
+    color: white;
+    font-size: 18px;
+    border: 2px solid black;
+}
+.mail button{
+    padding: 10px 15px;
+    font-size: 18px;
+    background: white;
+    border: 2px solid black;
+    
+}
+footer .mail button :hover{
+    color: blue;
+    background: white;
+    box-shadow: 0px 0px 30px -5px black;
+    transition: 1s;
+    
+}
+@media (max-width:600px){
+    footer {
+        flex-direction: column;
+    }
+    .elements .cards .card{
+        width: 100%;
+    }
+}
+.showcase .text{
+    width: 50%;
+    text-align: center;
+    background-color: aqua;
+    padding: 20px;
+    border-radius: 20px;
+}
